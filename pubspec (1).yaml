@@ -1,0 +1,30 @@
+name: tabibak_center
+description: طبيبك للمراكز - تطبيق إدارة الحجوزات والأخصائيين والأسرّة والخدمات المنزلية
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'   # الكود يستخدم Records (Dart 3)
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^6.2.1     # خط Cairo (يُحمَّل من الإنترنت أول تشغيل)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # ── اختياري: لتشغيل التطبيق بدون إنترنت ضمّن خط Cairo محلياً ──
+  # 1) نزّل Cairo-Regular.ttf و Cairo-Bold.ttf وضعهما في assets/fonts/
+  # 2) فعّل السطور التالية، ثم في الكود استبدل GoogleFonts.cairo(...) بـ TextStyle(fontFamily: 'Cairo', ...)
+  # fonts:
+  #   - family: Cairo
+  #     fonts:
+  #       - asset: assets/fonts/Cairo-Regular.ttf
+  #       - asset: assets/fonts/Cairo-Bold.ttf
+  #         weight: 700
